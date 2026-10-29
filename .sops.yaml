@@ -1,0 +1,15 @@
+creation_rules:
+  - path_regex: 'secrets/age/keys/.*-key\.txt$'
+    age: >-
+      age1sgp7m3v48uyqvdl8lea5r7zv594wy42eszf8y3ppqju659nvqews4jjxf8
+  - path_regex: 'secrets/ssh/[^.]+$'
+    age: >-
+      age1sgp7m3v48uyqvdl8lea5r7zv594wy42eszf8y3ppqju659nvqews4jjxf8
+  - path_regex: 'applications/overlays/[^/]+/(managed-services|services)/.*/.*\.ya?ml$'
+    encrypted_regex: "^(data|stringData)$"
+    age: >-
+      age1sgp7m3v48uyqvdl8lea5r7zv594wy42eszf8y3ppqju659nvqews4jjxf8
+  - path_regex: '^infrastructure/clusters/dd-openstack-cluster/.*\.ya?ml$'
+    encrypted_regex: "^(data|stringData|secret)$"
+    age: >-
+      age1sgp7m3v48uyqvdl8lea5r7zv594wy42eszf8y3ppqju659nvqews4jjxf8

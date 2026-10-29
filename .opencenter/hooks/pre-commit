@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+set -eu
+
+if [ "${OPENCENTER_SKIP_HOOKS:-}" = "1" ]; then
+  echo "WARNING: openCenter pre-commit checks skipped by OPENCENTER_SKIP_HOOKS=1" >&2
+  exit 0
+fi
+
+repo_root=$(git rev-parse --show-toplevel)
+opencenter cluster validate-manifests --repo-path "$repo_root" --staged --security-only
