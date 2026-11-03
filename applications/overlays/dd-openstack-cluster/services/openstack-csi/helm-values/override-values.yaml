@@ -1,0 +1,23 @@
+secret:
+    enabled: ENC[AES256_GCM,data:kiJVeQ==,iv:uEnYCA9GqDpPSfwnCQUBrVzwDiFB07MWwNATDWvFTag=,tag:o7NfNvI+QHoMoTPA3BohKw==,type:bool]
+    hostMount: ENC[AES256_GCM,data:iEag9AA=,iv:Tr+RydeBjr9q8PHMN+hkWE6vMYVViuptsBj8H3qA+Tg=,tag:R829JzUkLVDbpW30Xw3GsQ==,type:bool]
+    create: ENC[AES256_GCM,data:UhrhKQ==,iv:90d5iIObmbxBycRFHguiNSwE5gUHdSZ0PA/6I95p6U4=,tag:TlAwn724foHdxKs1WSQAig==,type:bool]
+    filename: ENC[AES256_GCM,data:ZG6endtvhtYdlg==,iv:uo4X4LQYJWNzZpYn2qotXCSbDAbKMU+ilNcz1ThhZnM=,tag:GJCKw7vVY/Yd3GH3Eq/mRg==,type:str]
+    name: ENC[AES256_GCM,data:tqfg3eyR3U5wr+mEVQCo91b82+FjqpE=,iv:f5kCDNm4q6uKV2jWfTH4S5TRUf8E6BHUuuVupjWd5Hw=,tag:peu81RO4LKZOFTVDz4XJVQ==,type:str]
+    data:
+        cloud.conf: ENC[AES256_GCM,data:fEzXeKEwLknlF9ltkm6456SK/qefuQnKQKlCERVkysNFmOIIbe84EVLxN3Kvh+7Hvdz5qo93TUfcy1oBv83i5oHnjP0qCvEWdgIkUS6nDNPOpquMrx2/DUFCfgyIOA0qux3+FjahNqwEM4yMM2M6VdZLewfFelNKdK3KwxHNF1JGnzaavUPba5p8RkRgoDYTSWdUfMzXXOPlL4FijrhGqbjKpc+OzYJCAKrzR2yqJmSeGb/Wh4lzINLlCH39BmCxWoUMYtrbvBlMUK3Kk86wghGasWi2oOK90WrWoddcJ92NWzQnIC4HEjJr4aElrYlp7P1Lptzr7w==,iv:TndfNs9BCSbRhjTFbGmqBtYu8yJ7WITL+VXkuuhhTow=,tag:QPcqbfS3g3XjmTrWXla6zw==,type:str]
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBrTGl6OWF1Q0ZueFhFdnc0
+            R21sUHJEUWc0ZmZiNVQvQ1hSWUF3U3dJRDF3CkpDL0s1bFBpVFE3VGQzc0JLWEVo
+            Qms0SXNyNVVRS1ptSUh6RGY5Z1FNZjgKLS0tIE5kemxrN0lWbVEyR2NUTUJXS0dF
+            RDc0OWR5eUgwUHI5Rys2eDM3L0ZFTGMK2um7lLjhv+++fnVle6/EHaJ/iYCQU0hK
+            N92g0B2Rr3r++xJvIdeEJ8TE32M/jn5nd1k5ffAdfDwTexYlTIOW+g==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age1sgp7m3v48uyqvdl8lea5r7zv594wy42eszf8y3ppqju659nvqews4jjxf8
+    encrypted_regex: ^(data|stringData|credentials|password|passwordHash|htpasswdString|secret|token|clientSecret|client_secret|accessKeyId|access_key_id|access_key|accesskey|secretAccessKey|secret_access_key|secret_key|secretkey|application_credential_secret|application-credential-secret|tls\.crt|tls\.key)$
+    lastmodified: "2026-11-03T10:56:00Z"
+    mac: ENC[AES256_GCM,data:rz/Kwll2Kj+DT0KR/2198k4BuWbztGt3kgRuqG0cpFwaj+pO9zulPMmH1t+qIo404onVIPkMnAk59Tnr3LsmMvoFZggplfPRdQaXtmNArW3UZiR62XOfLIHaY7LyH8km6pzohrJsR5St127jzIjVoOwSDZdn5bVOXsUtfxSLuJs=,iv:191Q98QrLiSADqK1B6txiaG5GYdQmXwBJKsJ+6OQ2Sg=,tag:R2KoxNIzzLJJW8kPt9dWYg==,type:str]
+    version: 3.13.3

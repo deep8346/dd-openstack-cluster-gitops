@@ -1,0 +1,459 @@
+{
+  "version": 2,
+  "scope": "cluster",
+  "identity": "dd-openstack-cluster",
+  "files": {
+    "applications/overlays/dd-openstack-cluster/kustomization.yaml": {
+      "sha256": "99ab68a49e62d260a4fed5d1b472efb7d7df2d8282468d8107fdbfcc29afec92",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/managed-services/fluxcd/kustomization.yaml": {
+      "sha256": "323b14f40d491678bc58a14ba5a8c02f56d130aaafb54caa3c44c0b2428ef567",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/managed-services/fluxcd/sources.yaml": {
+      "sha256": "da2256626d650ac38a7bf077c17a2a73538d2c723db820c9ed63e06dd1d89ae8",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/managed-services/sources/kustomization.yaml": {
+      "sha256": "a4aa6066cc956aad0d2db78798ee9ec27638caab8d0f199c99c0bd557abc1d4d",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/calico/flux-kustomization.yaml": {
+      "sha256": "6c50d0d995e1dccbbcc9ad86319386b3e491aecfc3e6b5e3705f92cb7a0316d9",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/calico/helm-values/override_values.yaml": {
+      "sha256": "8d8850de869ed2021aea3e662d8199b2ac6abbb123607379f772b1a398a63db9",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/calico/helmrelease.yaml": {
+      "sha256": "4283893b81acef4d93dce166d4a4d2b667bac0cadc7a83842591a0048264226e",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/calico/helmrepository.yaml": {
+      "sha256": "cadbd7b6d07de7669855d4e9a4606c9b1b3c7efb2dd7f6b2c7160d307479162a",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/calico/kustomization.yaml": {
+      "sha256": "5e7095d613fb17f9a585ee035aed45f605466c252be3f169c253ab3e8e503460",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/calico/namespace.yaml": {
+      "sha256": "0c68be9fb1d1b064d68939e0990633ba955978b5e8a9d803d328cb921cf38c35",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/cert-manager/README.md": {
+      "sha256": "0a477e4128a4a412fd4cd46f5cd1d780a75f02f9b642df2d44f1435f7770e411",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/cert-manager/helm-values/override-values.yaml": {
+      "sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/cert-manager/kustomization.yaml": {
+      "sha256": "28380a4832533705442ea7f5edad8ffb9fc319bc8bfc85029b7487f6828d7788",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/cert-manager/rackspace-ca-issuer.yaml": {
+      "sha256": "67d1b99b9eca4abc78efad6434e42abaa81160159be66009b61330adb6b271f8",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/cert-manager/rackspace-selfsigned-ca.yaml": {
+      "sha256": "9ad27ea89bd1407c44ce90c1afda7e0e350f9eec02a89fb68d0575d59769db2a",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/cert-manager/rackspace-selfsigned-issuer.yaml": {
+      "sha256": "dfa84cf77145963d76f37953d82b05e1db09a48f09a600371b7fe77a519166f5",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/cert-manager.yaml": {
+      "sha256": "4a986ba9b2fa7db324de95422f78f342857aedc1a7dfded5ac4f00ce10332a1f",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/external-snapshotter.yaml": {
+      "sha256": "eaca606e25e53a5fa7e26cd92e4dce5e155d0382a2924c6434535743ef090719",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/flux-monitoring.yaml": {
+      "sha256": "26fd37d3678aadfe683fde6824fb9cd2ffc430df872ac0c67055361b348c1e2e",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/fluxcd-configs/podmonitor.yaml": {
+      "sha256": "5d9acaf78c310b41050478ee7d342a7489896948d038950a3bcd9a807f3506b0",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/gateway-api.yaml": {
+      "sha256": "c06bc0f5c3a86195c573de08f03ca02646bfb2dede815644d7e022725f44028a",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/gateway.yaml": {
+      "sha256": "e54a2e0f35487022174f361f35e2060deef725699146687272b36f20ed988adf",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/headlamp.yaml": {
+      "sha256": "734c785f05e65e94f0639f53fee8688cd12bad94af6c9739a2a06f3787638da3",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/keycloak.yaml": {
+      "sha256": "6edd4b7ba0b277eac73a2fde317b94753f64dce10bc48b01e95b1838d40f79f5",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/kube-prometheus-stack.yaml": {
+      "sha256": "d472bff325c2f6133bb091f8c29bdcbf354ae0a2ef7e6552fc08de47c05cf340",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/kustomization.yaml": {
+      "sha256": "a79dbf17ed43b59be1576f2d2582a0becc3985ac55fcf5686e050c28b6c55a88",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/kyverno.yaml": {
+      "sha256": "1fbed367b66df82a6a2530823bdddcd2f482eff68f01d15a2cf046f2ce059539",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/observability-namespace.yaml": {
+      "sha256": "b087650a084920ed121a5d645063b2f871583c0df31850a8556b167d2d66bcf2",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/observability-sources.yaml": {
+      "sha256": "9816a935186f58b0a2f573970d72cc4016a5152e140830e6faf2e654e41e7805",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/olm.yaml": {
+      "sha256": "c1cbf614b14fa3ee206d26ada90d55a410f1e11735941161e8db4e0ced9d1335",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/openstack-ccm-namespace.yaml": {
+      "sha256": "d9cbb0f3794baac553dfa49be7042955b270991d19e63f36d71c99b524fd405b",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/openstack-ccm.yaml": {
+      "sha256": "3d697738a72a0d42daef3126337157cae85819d5b8ae862eef7e72c05d40a9c1",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/openstack-csi-namespace.yaml": {
+      "sha256": "c08839502d3429363f1cab65dfadd328c1410d00a49c0fdba7aa6a8a63bdb295",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/openstack-csi.yaml": {
+      "sha256": "cc58f90c215d7aea30b0cb3c5b1848b0fb63416bcb1355a97d187693bec8f2c1",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/postgres-operator.yaml": {
+      "sha256": "a34e802c00038d01d5738d45e7bbca706efed65a9deea29d36f6aadcc47608d7",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/rbac-manager.yaml": {
+      "sha256": "03f13193f974c1950fa952859560245a5e0de3d2b949b5500d4354ab6d5b1770",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/sources.yaml": {
+      "sha256": "74048564fbbd9176caa0a2c3bdcd3e41c0bd1654a12b0cb121a2bd6daa5f5dc5",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/velero-namespace.yaml": {
+      "sha256": "830c739d89f5a442ed749597863b2ef4773a7c37ae158ab8197a4e4ab856f3d1",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/fluxcd/velero.yaml": {
+      "sha256": "a784b4878e971add47cbbc9cff4de77ee75061ee7faa22635b131625cdeef763",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/gateway-api/helm-values/override-values.yaml": {
+      "sha256": "c91e1e4cad46c7372935fe077ce5d99e15ff33040efc4a40504c40954f5e52fa",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/gateway-api/kustomization.yaml": {
+      "sha256": "b54003e5e6b72711890a6ab98c772de9098100982894632522beeedcabc589d3",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/gateway/envoy-proxy-config.yaml": {
+      "sha256": "9014895664d6abaebb7cac087343e8ab05322d5199b9ba37712e5ddfb7ca074c",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/gateway/gateway-class.yaml": {
+      "sha256": "b4031819e528e9bf2b76319e4a15208730406550412880df7400b5855f5d5dab",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/gateway/gateway.yaml": {
+      "sha256": "6579304a8c43c3bb563f654d9e7eb67957dfc1db9c4165d3e80d497f632b5983",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/gateway/kustomization.yaml": {
+      "sha256": "04a36ceb3c8c318a6cb6013cb94cf5a2fe2766e64fee0770d1617deca9782c21",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/gateway/namespace.yaml": {
+      "sha256": "64db008e267ba40343b3965bed8a386806452c76eefc7b340b107c9118cc0767",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/headlamp/headlamp-http-route.yaml": {
+      "sha256": "5ad3c07833a3f57ee34f9ec526443c23670eff7c0454773ae674d609df66572a",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/headlamp/helm-values/override-values.yaml": {
+      "sha256": "111b5dc225e0ce682f2d0c268a6e6e46c5ae5da55889ef76da866790befa199f",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/headlamp/kustomization.yaml": {
+      "sha256": "a032fe5ee6b123222e780e0253e4efd314e5320a9dcc9db88a1cb5cfb70cbe3b",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/keycloak/00-postgres/kustomization.yaml": {
+      "sha256": "bd711fb561478bc1864eacacc83577f3cb56e2a4f822a3032eb5676e6071d737",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/keycloak/00-postgres/postgres-cluster.yaml": {
+      "sha256": "6307654c36414f91a04513317129ae5efa0237adb66221faf448c2867dd2191b",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/keycloak/10-operator/kustomization.yaml": {
+      "sha256": "a7ca019795215e24e2cb56d0c8f23faf40e9797fbc3aa77128ab7557b40f3077",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/keycloak/10-operator/patch-auto-approve.yaml": {
+      "sha256": "4922eae7b45afdadebb58cb1022dc8ecd3c7183077c22100eaa44cb83aa3e8cc",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/keycloak/20-keycloak/httproute.yaml": {
+      "sha256": "9a77f790fbc1d1e69a4ddde5bc178cc1c65a7072e1cf156f2b5b34120d4c393a",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/keycloak/20-keycloak/keycloak-certificate.yaml": {
+      "sha256": "a5cbd61b45d29b27c47e41f25013a0080d6bc4a1872273b37bc6df53e7adc7ca",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/keycloak/20-keycloak/keycloak-cr-patch.yaml": {
+      "sha256": "9a95ea744ad4897b2a764f1ba542a3538249047cc2e1effdc80f882c1fd28564",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/keycloak/20-keycloak/kustomization.yaml": {
+      "sha256": "b0c4826238f5901c05f4123b27ec3d5ea1f84c943fe27b385c1da02b2b99da65",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/keycloak/20-keycloak/opencenter-realm.yaml": {
+      "sha256": "266637457dda61114d904820ca780820541ebf7b5ec32f4bca59d166e62c6d5a",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/keycloak/20-keycloak/theme/configmap-css.yaml": {
+      "sha256": "fac14a86632e324dab3e63659eb203c660229a45c151bbd8e8802b21a5adc3e1",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/keycloak/20-keycloak/theme/configmap-img.yaml": {
+      "sha256": "1841ca630d60bf0fb302a15b8c370fed51306e9dee5ab453e479f10f6cc4cc1e",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/keycloak/20-keycloak/theme/configmap-login.yaml": {
+      "sha256": "14df2b2b60d6406fb12496ea6b216158a56f3e03b1d641beb887e4cffd831919",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/kube-prometheus-stack/alertmanager-http-route.yaml": {
+      "sha256": "1e2d8f24c632b51bcd7c5a346d4857e0d07a0c25e0945132f4b5501f2fb3ad3c",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/kube-prometheus-stack/grafana-admin-password.yaml": {
+      "sha256": "de75e578c8f1fdccc4d6bbf991f34680c5de7e3003125cfd3a98a2e6f367b795",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/kube-prometheus-stack/grafana-http-route.yaml": {
+      "sha256": "1bbe2b28c1d8e38a2c571bd2dabaed9ec57ae320306b2657a8cd78c159c9c0e3",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/kube-prometheus-stack/grafana-oauth-secret.yaml": {
+      "sha256": "ee51de589fc08b8deab7e4d3136d9a3cfbd97b014f50e3a6d6701961c352843b",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/kube-prometheus-stack/helm-values/override-values.yaml": {
+      "sha256": "d68aa14ee3f8edf564be007977343b07619e54329785c5888dff169baffdce94",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/kube-prometheus-stack/kustomization.yaml": {
+      "sha256": "685d1769406049b510c87bcbc52163135efb4c3c42aa2c136226beac659794d7",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/kube-prometheus-stack/prometheus-http-route.yaml": {
+      "sha256": "e7501835bb1173607691d88c90cc5293ec5d531380aa7bd20c9731d1ac998596",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/oidc-security-policies/alertmanager-security-policy.yaml": {
+      "sha256": "27b3ee9c31654ae69cb94eb7106127e44955579c6c1007c1e804f698f8ce577c",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/oidc-security-policies/gateway-oidc-secret.yaml": {
+      "sha256": "1563c39ce1c47293dd0627a3f3589429ca7adcd1a40b3af9708ae549fd2f39e3",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/oidc-security-policies/kustomization.yaml": {
+      "sha256": "bdb2189c83cc5708f48747a830b772d8cef86be5f38ecb8253e5850ee45ab7aa",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/oidc-security-policies/prometheus-security-policy.yaml": {
+      "sha256": "0e1698e0fb594a5820c18f902c0577e604c304a42103e7164bd5560f110b5f6e",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/olm/kustomization.yaml": {
+      "sha256": "e5034170814531eb4ee344fa4687b961f853803bb3e73aa01173d9900ae1a6f3",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/olm/netpol.yaml": {
+      "sha256": "5334748b50db38090fdfe4a6d434b7907bcc03463f20a72d857a92df6ec57c18",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/olm/patches.yaml": {
+      "sha256": "48bf095c5a2725a6ab3a429d0ac68d87f035c66ed3ce678cc2465ca255f5b176",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/openstack-ccm/helm-values/override-values.yaml": {
+      "sha256": "df04b9e11864c068dafdb9169c64e54509a6f72083d1f6a310bc08e4527f4eec",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/openstack-ccm/kustomization.yaml": {
+      "sha256": "37938c2ef0a28c84394446bdb2b9b8f3e678ae144b82515d2d654342576359f9",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/openstack-ccm/namespace/kustomization.yaml": {
+      "sha256": "f84e68e7ff348e3194a38eec13d9833d92a4df72912743f4393af2d9c2dfb949",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/openstack-ccm/namespace/namespace.yaml": {
+      "sha256": "2948fad665f828ddba4d49f6cd8243619909b245a5d2828889a8ec0f67442799",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/openstack-csi/helm-values/override-values.yaml": {
+      "sha256": "c7e5cfe6c383fb502577a3d74177216568dc238dbcec8dcd0b01919741c1fd60",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/openstack-csi/kustomization.yaml": {
+      "sha256": "4af28f997b0739726a928fdf3b1d828c25e31b7bd570f35eb03e4f4c88ebac37",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/openstack-csi/namespace/kustomization.yaml": {
+      "sha256": "f84e68e7ff348e3194a38eec13d9833d92a4df72912743f4393af2d9c2dfb949",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/openstack-csi/namespace/namespace.yaml": {
+      "sha256": "73dabd14f163a6c50bacff25908923b9a1358cf20d5500bbc76160c9f1335b3b",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/postgres-operator/helm-values/override-values.yaml": {
+      "sha256": "a5384e2ce7b932053ec53f387500bcf468d7fdc16bbef421893d6b724cabaf64",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/postgres-operator/kustomization.yaml": {
+      "sha256": "fc89ceea1c803f1437177f8cb83c2b9a2323803c008af88d7e55a2c13f33dfdd",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/kustomization.yaml": {
+      "sha256": "d6bbf7c07eabe90cf0d1f3f8f1329435b8def821d5b28ed1c06481982d9331fc",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-cert-manager.yaml": {
+      "sha256": "52c58c6528c5f66e16d4f105b2a82083285ee929e0493bb662391f56bd11103b",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-external-snapshotter.yaml": {
+      "sha256": "90ee80649a023b987a85cb560eaa6e9fffba9ba386c28bfd6fa4873e53a15a6c",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-gateway-api.yaml": {
+      "sha256": "91f3b00505485f94a14ce5d807a1f48fa98ac6da68a5cac271c330e47f30a787",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-gateway.yaml": {
+      "sha256": "3199d135950d9d07c33a81bdfacf3df9ac65a6251de408d1f91a4f6855fe4908",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-headlamp.yaml": {
+      "sha256": "35a3f2873e3851c01dcafe779d1fb9c5013e2cb41e90ae14961d3a9f0600055c",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-keycloak-config.yaml": {
+      "sha256": "3c073ab448248cd172585c6475779e2223e822a530d5c7774381e71ebaec40e0",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-keycloak.yaml": {
+      "sha256": "5d2dbaca53eec8db6ec3148734b89c42b2d4c490966a5902d525341867d22877",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-kyverno.yaml": {
+      "sha256": "8fe0bad98e8e00d504fa7fd8fad92c35edebf4fb4661b84a34330d4c586fc80c",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-observability.yaml": {
+      "sha256": "7cba71acb7a4479c971e607bccdf07e4efa5d015d4450ff7386dbce26bdb7241",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-olm-config.yaml": {
+      "sha256": "85338afad245b16ea2f16eefa19588ea993794d14a3b4972b2a13adea9894213",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-olm.yaml": {
+      "sha256": "6be7b03a6e69d8cc3d0255e603937dfc49d7de90958f255512f8599d159d8f4d",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-openstack-ccm.yaml": {
+      "sha256": "a4de4f34db4692ae76a0a10ee962126d63ffbdddfd80f9db64207b2a82ef885b",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-openstack-csi.yaml": {
+      "sha256": "d9053cc4806825f8fc386cf5d350174f46584eb8fae863b5edce31e497dd71c0",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-postgres-operator.yaml": {
+      "sha256": "572a4dcf8a3dbf9f1c66717e8ade4f119d31907b509ba9ea2f7a1b89fbd581c4",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-rbac-manager.yaml": {
+      "sha256": "46e605bc43e65bdb42a56d99c37e82a6eaf8230ac86c085ca87c551979d2dc90",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/sources/opencenter-velero.yaml": {
+      "sha256": "1c2b0e0e20607d9bd57ba23361b1831863737c541223890fe0b1c7fbb60e3623",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/velero/helm-values/override-values.yaml": {
+      "sha256": "b9432bcf93d7ffb2f7b7456a63a3b4dd2ae3b15be00a17e2351957445e2b483f",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/velero/kustomization.yaml": {
+      "sha256": "a4c85569611f856649b8efd67bb66d28d83c8fc16cd1033b61d34462eeff5132",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/velero/namespace/kustomization.yaml": {
+      "sha256": "f84e68e7ff348e3194a38eec13d9833d92a4df72912743f4393af2d9c2dfb949",
+      "mode": 420
+    },
+    "applications/overlays/dd-openstack-cluster/services/velero/namespace/namespace.yaml": {
+      "sha256": "b3d7277f60d0a58baf252fcc7b13d91bbc16cc7e6d462b06e3b0628b52ebc8d8",
+      "mode": 420
+    },
+    "infrastructure/clusters/dd-openstack-cluster/Makefile": {
+      "sha256": "1de90822bc923c2add67cc8bf2983eb9077b56e3c05d1908252b92eb5a0be9ba",
+      "mode": 420
+    },
+    "infrastructure/clusters/dd-openstack-cluster/inventory/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 420
+    },
+    "infrastructure/clusters/dd-openstack-cluster/main.tf": {
+      "sha256": "8db685f0ba7298ceeaea80730b11b23f48c01ee9098286f4d12f387cb5b6c10a",
+      "mode": 420
+    },
+    "infrastructure/clusters/dd-openstack-cluster/outputs.tf": {
+      "sha256": "df7c5a62d473b36edfcddd5ced881578c3013d6c1ff6be0a3c69469c149595d6",
+      "mode": 420
+    },
+    "infrastructure/clusters/dd-openstack-cluster/provider.tf": {
+      "sha256": "bd233677f9982789da54f63812f94cb2d20e7832ff40daeeb6a4387e6dc5f1e8",
+      "mode": 436
+    },
+    "infrastructure/clusters/dd-openstack-cluster/terraform.tfvars": {
+      "sha256": "740d85c794592b7fff8e208d69ac90950997ec2b0faf13165d4adec3452905b4",
+      "mode": 384
+    },
+    "infrastructure/clusters/dd-openstack-cluster/variables.tf": {
+      "sha256": "3729d88d273db9c514fc10778968e6ac645ae2959b5459563a8b662c3da49c2c",
+      "mode": 420
+    }
+  }
+}

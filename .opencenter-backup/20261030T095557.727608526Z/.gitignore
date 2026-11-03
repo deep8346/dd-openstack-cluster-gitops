@@ -1,0 +1,22 @@
+# Private keys and secrets should never exist in this GitOps tree.
+*.key
+*-key.txt
+id_rsa*
+id_ed25519*
+*.pem
+*.age
+
+# Cluster config input is local state, not a GitOps artifact.
+/*-config.yaml
+/.*-config.yaml
+
+# Deploy-time OpenTofu/Kubespray artifacts
+infrastructure/clusters/*/inventory/
+infrastructure/clusters/*/venv/
+infrastructure/clusters/*/kubespray/
+infrastructure/clusters/*/.bin/
+infrastructure/clusters/*/kubespray-outputs.json
+infrastructure/clusters/*/ansible-local-tmp/
+infrastructure/clusters/*/.kubeconfig.fetch.tmp
+infrastructure/clusters/*/.terraform/
+infrastructure/clusters/*/.terraform.lock.hcl

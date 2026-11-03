@@ -1,0 +1,24 @@
+
+installation:
+  enabled: true
+  kubernetesProvider: ""
+  # OpenStack nodes using an external cloud provider remain tainted until the
+  # GitOps-managed CCM initializes them. Calico must become ready before Flux
+  # can install that CCM, so every operator-managed control-plane workload
+  # must tolerate the temporary bootstrap taint.
+  controlPlaneTolerations:
+    - key: node.cloudprovider.kubernetes.io/uninitialized
+      operator: Exists
+      effect: NoSchedule
+  calicoNetwork:
+    bgp: Disabled
+    ipPools:
+      - cidr: "10.42.0.0/16"
+        encapsulation: "VXLAN"
+        natOutgoing: Enabled
+        nodeSelector: all()
+    nodeAddressAutodetectionV4:
+      firstFound: true
+    windowsDataplane: Disabled
+  serviceCIDRs:
+    - "10.43.0.0/16"

@@ -1,0 +1,25 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: opencenter-keycloak-config
+  namespace: flux-system
+spec:
+  interval: 15m
+  # --- token auth (active) ---
+  url: https://github.com/deep8346/openCenter-cli
+  ref:
+    branch: "main"
+  secretRef:
+    name: flux-system
+  # --- ssh auth (alternative) ---
+  # url: ssh://git@github.com/deep8346/openCenter-cli
+  # ref:
+  #   branch: "main"
+  # secretRef:
+  #   name: flux-system
+  include:
+    - repository:
+        name: opencenter-keycloak
+      fromPath: applications/base/services/keycloak
+      toPath: applications/overlays/dd-openstack-cluster/services/base/keycloak/

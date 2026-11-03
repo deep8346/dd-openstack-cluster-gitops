@@ -1,22 +1,90 @@
-# Private keys and secrets should never exist in this GitOps tree.
-*.key
-*-key.txt
-id_rsa*
-id_ed25519*
-*.pem
-*.age
+# Python
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.Python
+build/
+dist/
+venv/
+.env
+.pytest_cache/
+htmlcov/
+.tox/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Terraform / OpenTofu
+.terraform/
+.opentofu-local*/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+crash.log
+override.tf
+override_*.tf
+*.tfvars
+*.tfvars.json
+.terraformrc
+terraform.rc
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+# Thumbnails
+._*
+# Spotlight files
+.Spotlight-V100
+# Temporary files
+.Trashes
+Icon?
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.xcscmblueprint
+.xcscmblueprint
+*.xccheckout
+# Finder
+.localized
+
+# Linux
+# Temporary files
+*~
+.#*
+*.swp
+*.bak
+*.tmp
+
+#RMPK specific
+.bin/
+id_rsa
+id_rsa.pub
+kubeconfig.yaml
+ca.crt
+ca.key
+kubespray/
+ansible-hardening/
+.python-version
+credentials/
+.mygitignore
+
+# openCenter deploy-time artifacts: the CLI lifecycle renders the Kubespray
+# inventory into the cluster state zone; the inventory pattern covers
+# legacy-mode trees that still render it under the cluster directory.
+infrastructure/clusters/*/inventory/
+infrastructure/clusters/*/.terraform/
+infrastructure/clusters/*/.terraform.lock.hcl
+infrastructure/clusters/*/kubespray-outputs.json
+infrastructure/clusters/*/ansible-local-tmp/
+infrastructure/clusters/*/.kubeconfig.fetch.tmp
 
 # Cluster config input is local state, not a GitOps artifact.
 /*-config.yaml
 /.*-config.yaml
-
-# Deploy-time OpenTofu/Kubespray artifacts
-infrastructure/clusters/*/inventory/
-infrastructure/clusters/*/venv/
-infrastructure/clusters/*/kubespray/
-infrastructure/clusters/*/.bin/
-infrastructure/clusters/*/kubespray-outputs.json
-infrastructure/clusters/*/ansible-local-tmp/
-infrastructure/clusters/*/.kubeconfig.fetch.tmp
-infrastructure/clusters/*/.terraform/
-infrastructure/clusters/*/.terraform.lock.hcl

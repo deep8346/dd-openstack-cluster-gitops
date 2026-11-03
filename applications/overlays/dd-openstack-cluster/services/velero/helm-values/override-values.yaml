@@ -1,0 +1,23 @@
+---
+configuration:
+  features: EnableCSI
+  defaultSnapshotMoveData: false
+  defaultVolumesToFsBackup: false
+  backupStorageLocation:
+    - name: default
+      provider: community.openstack.org/openstack
+      default: true
+      bucket: dd-openstack-cluster-velero
+      config:
+        region: DFW3
+  volumeSnapshotLocation: []
+initContainers:
+  - name: velero-plugin-openstack
+    image: lirt/velero-plugin-for-openstack:v0.6.0
+    imagePullPolicy: IfNotPresent
+    volumeMounts:
+      - mountPath: /target
+        name: plugins
+snapshotsEnabled: true
+backupsEnabled: true
+deployNodeAgent: false

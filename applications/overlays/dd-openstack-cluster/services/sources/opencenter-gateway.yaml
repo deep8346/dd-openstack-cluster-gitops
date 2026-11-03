@@ -1,0 +1,16 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: opencenter-gateway
+  namespace: flux-system
+spec:
+  interval: 15m
+  # --- token auth (active) ---
+  url: https://github.com/opencenter-cloud/openCenter-gitops-base.git
+  ref:
+    tag: "2026.03-rc4"
+  # --- ssh auth (alternative) ---
+  # url: ssh://git@github.com/opencenter-cloud/openCenter-gitops-base.git
+  # ref:
+  #   tag: "2026.03-rc4"

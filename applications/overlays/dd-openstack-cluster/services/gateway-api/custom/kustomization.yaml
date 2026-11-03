@@ -1,0 +1,6 @@
+# Files placed in this directory are owned by you, not by openCenter.
+# "opencenter cluster generate" will never modify or delete them.
+# Add files to this directory to the resources list below to have Kustomize apply them.
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources: []

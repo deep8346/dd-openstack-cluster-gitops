@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "scope": "global",
+  "identity": "repository",
+  "files": {
+    ".gitignore": {
+      "sha256": "89e398f548e3879c7372e26b863598141e3f040d9017bb1a16a2caaf4e640169",
+      "mode": 420
+    },
+    "README.md": {
+      "sha256": "1b035c6dd3418fdeedcc2a281e6141e524fb4b4dba63c464d85ac1f7d7f0f895",
+      "mode": 420
+    },
+    "applications/overlays/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 420
+    },
+    "infrastructure/clusters/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 420
+    }
+  }
+}

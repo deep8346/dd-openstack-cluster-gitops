@@ -1,0 +1,28 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ./sources.yaml
+  # PodMonitor lives under ./fluxcd-configs/ and needs monitoring.coreos.com
+  # CRDs. Wrapped in flux-monitoring.yaml (Flux Kustomization) with dependsOn
+  # kube-prometheus-stack-base so it waits for the CRDs to be installed.
+  - ./flux-monitoring.yaml
+  - ./observability-namespace.yaml
+  - ./observability-sources.yaml
+  - ./cert-manager.yaml
+  - ./keycloak.yaml
+  - ./olm.yaml
+  - ./openstack-ccm-namespace.yaml
+  - ./openstack-csi-namespace.yaml
+  - ./velero-namespace.yaml
+  - ./external-snapshotter.yaml
+  - ./gateway.yaml
+  - ./gateway-api.yaml
+  - ./headlamp.yaml
+  - ./kube-prometheus-stack.yaml
+  - ./kyverno.yaml
+  - ./openstack-ccm.yaml
+  - ./openstack-csi.yaml
+  - ./postgres-operator.yaml
+  - ./rbac-manager.yaml
+  - ./velero.yaml

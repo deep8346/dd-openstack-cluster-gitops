@@ -1,0 +1,18 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: keycloak-tls
+  namespace: keycloak
+spec:
+  secretName: keycloak-tls-secret
+  duration: 8760h0m0s
+  renewBefore: 360h0m0s
+  dnsNames:
+    - auth.dd-openstack-cluster.dfw3.k8s.opencenter.cloud
+    - keycloak.keycloak.svc.cluster.local
+    - keycloak.keycloak.svc
+    - keycloak
+  issuerRef:
+    name: rackspace-ca
+    kind: ClusterIssuer
+    group: cert-manager.io

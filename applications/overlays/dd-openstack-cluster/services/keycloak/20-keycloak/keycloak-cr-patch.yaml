@@ -1,0 +1,114 @@
+---
+# Keycloak Custom Resource patch configuration
+# Defines a highly available Keycloak deployment with PostgreSQL backend
+apiVersion: k8s.keycloak.org/v2alpha1
+kind: Keycloak
+metadata:
+  name: keycloak
+  namespace: keycloak
+spec:
+  # Deployment configuration
+  startOptimized: false
+  instances: 3
+  
+  # Resource limits for production
+  resources:
+    requests:
+      memory: 1250M
+      cpu: 500m
+    limits:
+      memory: 2250M
+      cpu: 2
+
+  # Database configuration (PostgreSQL)
+  db:
+    vendor: postgres
+    usernameSecret:
+      name: keycloak.postgres-cluster.credentials.postgresql.acid.zalan.do
+      key: username
+    passwordSecret:
+      name: keycloak.postgres-cluster.credentials.postgresql.acid.zalan.do
+      key: password
+    url: jdbc:postgresql://postgres-cluster.keycloak.svc.cluster.local:5432/keycloak
+    poolMinSize: 30
+    poolInitialSize: 30
+    poolMaxSize: 30
+
+  # HTTP configuration
+  http:
+    httpEnabled: true
+  
+  hostname:
+    hostname: auth.dd-openstack-cluster.dfw3.k8s.opencenter.cloud
+    strict: false
+    backchannelDynamic: false
+  
+  proxy:
+    headers: xforwarded
+  
+  additionalOptions:
+    - name: proxy
+      value: "edge"
+    - name: hostname-url
+      value: "https://auth.dd-openstack-cluster.dfw3.k8s.opencenter.cloud"
+    - name: metrics-enabled
+      value: "true"
+    - name: event-metrics-user-enabled
+      value: "true"
+    - name: health-enabled
+      value: "true"
+    - name: log-level
+      value: INFO
+    - name: log-console-output
+      value: json
+    - name: cache
+      value: ispn
+    - name: spi-connections-http-client-default-connection-timeout-millis
+      value: "60000"
+  unsupported:
+    podTemplate:
+      spec:
+        # Pod topology spread for multi-AZ distribution (not needed for local Kind)
+        topologySpreadConstraints:
+          - maxSkew: 1
+            topologyKey: "topology.kubernetes.io/zone"
+            whenUnsatisfiable: "ScheduleAnyway"
+            labelSelector:
+              matchLabels:
+                app: "keycloak"
+                app.kubernetes.io/managed-by: "keycloak-operator"
+                app.kubernetes.io/instance: "keycloak"
+                app.kubernetes.io/component: "server"
+          - maxSkew: 1
+            topologyKey: "kubernetes.io/hostname"
+            whenUnsatisfiable: "DoNotSchedule"
+            labelSelector:
+              matchLabels:
+                app: "keycloak"
+                app.kubernetes.io/managed-by: "keycloak-operator"
+                app.kubernetes.io/instance: "keycloak"
+                app.kubernetes.io/component: "server"
+        containers:
+          - name: keycloak
+            volumeMounts:
+              - name: theme-opencenter-login
+                mountPath: /opt/keycloak/themes/opencenter/login
+                readOnly: true
+              - name: theme-opencenter-css
+                mountPath: /opt/keycloak/themes/opencenter/login/resources/css
+                readOnly: true
+              - name: theme-opencenter-img
+                mountPath: /opt/keycloak/themes/opencenter/login/resources/img
+                readOnly: true
+        volumes:
+          - name: theme-opencenter-login
+            configMap:
+              name: keycloak-theme-opencenter-login
+          - name: theme-opencenter-css
+            configMap:
+              name: keycloak-theme-opencenter-css
+          - name: theme-opencenter-img
+            configMap:
+              name: keycloak-theme-opencenter-img
+
+
