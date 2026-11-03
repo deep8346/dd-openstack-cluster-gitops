@@ -192,7 +192,7 @@
       "mode": 420
     },
     "applications/overlays/dd-openstack-cluster/services/headlamp/helm-values/override-values.yaml": {
-      "sha256": "111b5dc225e0ce682f2d0c268a6e6e46c5ae5da55889ef76da866790befa199f",
+      "sha256": "72cfe39b59b39f915f92b39fdad2acd6b381db77a4c0bf180e687144e32799f9",
       "mode": 420
     },
     "applications/overlays/dd-openstack-cluster/services/headlamp/kustomization.yaml": {
@@ -304,7 +304,7 @@
       "mode": 420
     },
     "applications/overlays/dd-openstack-cluster/services/openstack-ccm/helm-values/override-values.yaml": {
-      "sha256": "df04b9e11864c068dafdb9169c64e54509a6f72083d1f6a310bc08e4527f4eec",
+      "sha256": "8706590ed1bfda350c2b04b90861cdaefab70713b5132900f8ce54609dae4434",
       "mode": 420
     },
     "applications/overlays/dd-openstack-cluster/services/openstack-ccm/kustomization.yaml": {
@@ -320,7 +320,7 @@
       "mode": 420
     },
     "applications/overlays/dd-openstack-cluster/services/openstack-csi/helm-values/override-values.yaml": {
-      "sha256": "c7e5cfe6c383fb502577a3d74177216568dc238dbcec8dcd0b01919741c1fd60",
+      "sha256": "5b9549db3e34b705bf6e760616dbd8d091d49006b3001d7010f098fb0257b101",
       "mode": 420
     },
     "applications/overlays/dd-openstack-cluster/services/openstack-csi/kustomization.yaml": {

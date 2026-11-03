@@ -4,9 +4,9 @@ config:
         externalSecret:
             enabled: false
         secret:
-            create: ENC[AES256_GCM,data:w06bxA==,iv:rsytzQnEMVi/dZsAeAGqzlfCefS2LMxma9fh/S5jcjQ=,tag:fxBzAETa8j4T19azQZPURA==,type:bool]
+            create: ENC[AES256_GCM,data:x0hSLg==,iv:5lN4Lm0hMIcvEAGbEwqmawsckUbB5rx9hEzM0BMDo5A=,tag:L2XgyM5EpY0uC1pM7tYNkQ==,type:bool]
         clientID: opencenter
-        clientSecret: ENC[AES256_GCM,data:32pH5AwbryQbqHNAPPVJpan25KXNlfqM8KWZO9VtfL8=,iv:5g2sGiaMTtNtdlWqqfnzaCx5+LpvZPH1ihcXCEKdL0U=,tag:l7+o1/q6V7T530aJ5lVnfA==,type:str]
+        clientSecret: ENC[AES256_GCM,data:Hf7Cn2uDhRa9G2lBCVMXpSE4h5krN9pjBk1oe0PQK6k=,iv:Tg9JkslEC+rcFq2bpJshGnV3FbK/iiKWKfL3i2nW/hk=,tag:Jr2j2ud5o/BALepyjAjUfQ==,type:str]
         issuerURL: https://auth.dd-openstack-cluster.dfw3.k8s.opencenter.cloud/realms/opencenter
         scopes: openid profile email groups
         callbackURL: https://dashboard.dd-openstack-cluster.dfw3.k8s.opencenter.cloud/oidc-callback
@@ -37,14 +37,14 @@ sops:
     age:
         - enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAxbzQwaUxIMUpPVnZxUk9Y
-            c0ZQeXJsWWM2ajhHQkRYbmxFVTExdEp1cFVRCk1QSzVRQmg1bXQ0NmRoRnNScm9O
-            bFp2czB0L2N3bkptZGgzQzRrMEZhVDAKLS0tIDlnOTd1RUdwRGxPQWJmSWZoZ0R4
-            ZEpDZjV6RnBHbWJ4S2RKemU5UnZ1VHMKLj8jdPvsLfV6+EdfPK0BvtqzZ4+AC9jW
-            2MtGVHb0g+owUVjKTOYyXcDPUCNSD3p2wX7KnedoPoiXt+2fFXJAMg==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBtcmd6eVVQNUt2eU8zUWhQ
+            bzBsVjdEaTJkTTVCMGQ0TTJ0eXJJS2F0MEU0CkdMUTNKbllpN09HTmJySlFkVHdm
+            Ui8rb0JsamlrSm5VdE1BSlUxa090azQKLS0tIHNrTFJtYTRMajdxVkNiY2pZUVdo
+            NnFob3hxRjRBdW5WbldQN25KZkJFYTgKn6kFfofEUudBoJH2njel8T2+ChsxRRdC
+            Nke99fxRWKm21fkaey8f1iAZ26vP1TKeCoJQ5XYwATyqMb2o0ymqvw==
             -----END AGE ENCRYPTED FILE-----
           recipient: age1sgp7m3v48uyqvdl8lea5r7zv594wy42eszf8y3ppqju659nvqews4jjxf8
     encrypted_regex: ^(data|stringData|credentials|password|passwordHash|htpasswdString|secret|token|clientSecret|client_secret|accessKeyId|access_key_id|access_key|accesskey|secretAccessKey|secret_access_key|secret_key|secretkey|application_credential_secret|application-credential-secret|tls\.crt|tls\.key)$
-    lastmodified: "2026-11-03T10:56:00Z"
-    mac: ENC[AES256_GCM,data:dXB2QbLjxV6MpyE1ZnOxOh1lu7Hx6xgecWO3xIcDPW4z3QD3w/5h6SzpSFcpToX4pg0bU52m9az2bDb1YdyGsI2yBQkTDP7DX9xoXmwE22/7DYSDl39tB6KRTbK/zHdOPGNREuauWM8GeLBO7nBCPxnj3xPZsHD/4AbBTBpCLG0=,iv:h9cMu1lnzbn13FjgSyEfJIObtlzCi+dQBhWvEF6Xuv0=,tag:c0QIcxa/zAyRO2SiXw0Flg==,type:str]
+    lastmodified: "2026-11-03T11:32:04Z"
+    mac: ENC[AES256_GCM,data:0JlWPXVC5tfDSEpass7VgIu9o52QcYS5f/9qDkDD2QeJix/YfdEJYENh21EnI5YJ0Um56v3cPlDesa5U+Gsa8uvLfuzY9rcba5le4BdU1CUayfwzbYjVFNrJOYhFAttlfV9dG/g5tGjcI0F0H4OMb2iHmx41D4gMPxExOsm3y+0=,iv:vFNsv7JbfFU/wTx2+d7HcA56Cx5Ovc4LVBw04+DctRw=,tag:Mukz8jbGWm56DPNsm7z+Eg==,type:str]
     version: 3.13.3

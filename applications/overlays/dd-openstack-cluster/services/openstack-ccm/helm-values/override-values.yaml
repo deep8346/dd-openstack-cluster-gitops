@@ -2,7 +2,7 @@ cloudConfig:
     global:
         auth-url: https://keystone.api.dfw3.rackspacecloud.com/v3/
         application-credential-id: ${OPENSTACK_APP_CRED_ID}
-        application-credential-secret: ENC[AES256_GCM,data:5HYBt8ZwnbN9qJh72Y25+cuzUbvyb9TNHdqP3g==,iv:sUo6iuw+Rt+kC/sIkfrSnGo83Kma7EiFZeCWsrA9gKw=,tag:ehcBHzMhCkA0ojz2HNbYkQ==,type:str]
+        application-credential-secret: ENC[AES256_GCM,data:BEMmxRcKHw3uuf8nsRDzuSHiMuQcdbLnAhBcIw==,iv:/QF3JQ65EqflljBqye+LNt/zXTUy4KjQAAkQwrH8o9U=,tag:VJCfrXEMUcNJgkYs1obxzQ==,type:str]
         domain-name: default
         region: DFW3
         tenant-name: null
@@ -14,14 +14,14 @@ sops:
     age:
         - enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA2UFNmUC82TnZrclhmMnNW
-            SUtacDd4Y0RUYjVmY1cvR3pVV2c5dUZRdUgwClRQVU8wR0xoOE9mSG5QQkRUdlhM
-            T3NoUURHV2ozNDJrdFhBTGx2MzVMa1kKLS0tIE9sNSsxTFRFblg0TG5DYzVzZ0Rm
-            YWdrS2FTZnMxd1FJbXBIVEVHRkdlNlkKyxfQzaMYKBLNtpHccfCQKtdHubsfUfQ5
-            ITh7aGtQbiVTvd5X2WigE3P+u7vHyLOZ2TlDqhuSyf1bbv5Pw7+E/A==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB6Y1BwYktieVQ5M3FXVWxF
+            cUJqV3o2cHR5Zi8rbVl6QmxYS3BsUGJmbms4Cm1rWG5QNTFhd2tmV21Cb05SS3NE
+            dWpFTW1hSWZlZmdmQll4cWFHbU9yakUKLS0tIHA2UXYxN3RGUXRKaDBYeEY1ajZw
+            YUZRb3RlYW9NSzhHZGM5aUowMHJuc2cKIY+fR98rYKV+vSRU8awFSm6KGa92MhEF
+            Xv7xfSchEuaPYjz4qTvzcze9csDxPtSdfMLEG6UPcgf0NpXL63+2CQ==
             -----END AGE ENCRYPTED FILE-----
           recipient: age1sgp7m3v48uyqvdl8lea5r7zv594wy42eszf8y3ppqju659nvqews4jjxf8
     encrypted_regex: ^(data|stringData|credentials|password|passwordHash|htpasswdString|secret|token|clientSecret|client_secret|accessKeyId|access_key_id|access_key|accesskey|secretAccessKey|secret_access_key|secret_key|secretkey|application_credential_secret|application-credential-secret|tls\.crt|tls\.key)$
-    lastmodified: "2026-11-03T10:56:00Z"
-    mac: ENC[AES256_GCM,data:ljicj1WnaM1r3i5wWzwguwcepSIGRcIfbFbLTgfjxzWoti6HHWoG87Vw/hlrHeBxQlEKrqK5PFTbq0rEhNmcgISq3oGgGBQjCHp69AKBadrfL8WEpa9DvhYR8CwXt5pO+KJ/AJTLi3LPaBDMbUMQ3h7asAYvlR4UF8JD42waT4M=,iv:Ql5swLfjspdkraFI/eKWbD/xIqmhtXLtBSh4aWvjsIM=,tag:AXCyzebmcLUGW5+1p9H+qQ==,type:str]
+    lastmodified: "2026-11-03T11:32:04Z"
+    mac: ENC[AES256_GCM,data:0Vm9XSefYbyAoQacCTzjRLbT+q41xw1Fe6SvugQ4wyYr3R347kMTVymPb6eBA9Oy25+vmO6nEbJt6BkWmVE9scG975pfUsjxjCL57AhooB7GdDvO8GyXPBVlKAAJHMnFnLyPVPsqLYZ4xfszEy4tm7oQfj0dVLQOS39fHmLDLGo=,iv:8RbjsOg7oxbJCEELDzUEGdnMyHtbxngV+sTStT1MiTQ=,tag:nxVEOzcKCb7uEun7c0gAew==,type:str]
     version: 3.13.3
