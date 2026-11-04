@@ -1,0 +1,2 @@
+os_application_credential_id = "${OPENSTACK_APP_CRED_ID}"
+os_application_credential_secret = "${OPENSTACK_APP_CRED_SECRET}"
