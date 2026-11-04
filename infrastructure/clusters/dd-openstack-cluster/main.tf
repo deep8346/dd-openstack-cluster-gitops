@@ -16,9 +16,9 @@ locals {
   openstack_user_password                 = ""
   application_credential_id               = var.os_application_credential_id
   application_credential_secret           = var.os_application_credential_secret
-  openstack_project_domain_name           = "66b6868403a5071ba7ec0bf37708b709"
-  openstack_user_domain_name              = "66b6868403a5071ba7ec0bf37708b709"
-  openstack_tenant_name                   = ""
+  openstack_project_domain_name           = "default"
+  openstack_user_domain_name              = "default"
+  openstack_tenant_name                   = "f641d281-b080-41b9-ac8b-149ff2aef271"   # Need to update from skyline Project_Name 
   floatingip_pool                         = "PUBLICNET"
   router_external_network_id              = "external-network-id-placeholder"
   # VLAN settings
