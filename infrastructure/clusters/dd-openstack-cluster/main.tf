@@ -20,7 +20,8 @@ locals {
   openstack_user_domain_name              = "default"
   openstack_tenant_name                   = "f641d281-b080-41b9-ac8b-149ff2aef271"   # Need to update from skyline Project_Name 
   floatingip_pool                         = "PUBLICNET"
-  router_external_network_id              = "external-network-id-placeholder"
+#  router_external_network_id              = "external-network-id-placeholder"
+  router_external_network_id              = "82be3711-cd97-4f7c-8bbd-59f5524a949e"  #changed 
   # VLAN settings
   vlan_id                                 = ""
   mtu                                     = ""
@@ -49,7 +50,7 @@ locals {
   # DNS servers to configure on the nodes
   dns_nameservers                         = ["8.8.8.8", "8.8.4.4"]
   ntp_servers                             = ["time.dfw3.rackspace.com", "time2.dfw3.rackspace.com"]
-  image_id                                = "3e069513-804e-4a88-b75f-28516de01007"
+  image_id                                = "8e7ca3c4-7536-43dc-ae48-8307547d493c"   # Changed 
   image_id_windows                        = ""
   k8s_api_port                            = 443
   k8s_api_port_acl                        = ["0.0.0.0/0"]
@@ -65,10 +66,10 @@ locals {
   node_worker_windows                     = "win"
   ub_version                              = "24"
   #FLEX Flavor Settings ==========================
-  flavor_bastion                          = "gp.0.4.4"
-  flavor_master                           = "gp.0.4.4"
-  flavor_worker                           = "gp.0.4.4"
-  flavor_worker_windows                   = "gp.0.4.4"
+  flavor_bastion                          = "gp.5.4.16"
+  flavor_master                           = "gp.5.4.16"
+  flavor_worker                           = "gp.5.4.16"
+  flavor_worker_windows                   = "gp.5.4.16"
 
   worker_node_bfv_volume_size             = 40
   worker_node_bfv_destination_type        = "volume"
